@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Albert</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="sheet/bootstrap.css">
+	<link rel="stylesheet" href="sheet/ionicons.min.css">
+	<link rel="stylesheet" href="sheet/mine.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+	<script src="javascript/myscript.js"></script>
+</head>
+
+<body>
+	<div class="menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h3 class="py-3">About <span>Me</span></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" style="margin-top: 116px;">
+		<div class="row">
+			<div class="col-11 mx-auto profile">
+				<div class="py-3 px-2 px-lg-4 py-lg-5">
+
+					<div class="row">
+						<div class="avatarBox col-12 col-lg-5">
+							<img src="img/an.png" class="img-fluid">
+						</div>
+
+						<div class="infoBox col-12 col-lg-6 mt-2 mt-lg-0">
+							<p class="sayHi">Hello</p>
+
+							<div class="name">
+								<p><span>I'm</span> Albert</p>
+								<p class="s">Verified
+									<span class="ion-ios-checkmark-outline"></span>
+								</p>
+								<p><span class="ion-android-globe"></span> VietNam</p>
+							</div>
+							<hr>
+
+							<div class="detailInfo">
+								<div class="row my-2">
+									<div class="col-lg-4 col-12 boldd">Name</div>
+									<div class="col-lg-8 col-12 b">Albert Van Jin</div>
+								</div>
+								<div class="row my-2">
+									<div class="col-lg-4 col-12 boldd">Company</div>
+									<div class="col-lg-8 col-12 b">Interns</div>
+								</div>
+								<div class="row my-2">
+									<div class="col-lg-4 col-12 boldd">Jobs</div>
+									<div class="col-lg-8 col-12 b">Information technology engineer</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-4 col-12 boldd">VietNamese</div>
+									<div class="col-lg-8 col-12 b">Nguyễn Văn An</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-11 mx-auto bg-danger contact text-center">
+				<div class="social col-12">
+					<!-- Facebook -->
+					<a href="https://www.facebook.com/albertvanjin/" target="_blank">
+						<span class="ion-social-facebook mr-4 mr-lg-5"></span>
+					</a>
+					<!-- Instagram-->
+					<a href="https://www.instagram.com/albertvanjin/" target="_blank">
+					<span class="ion-social-instagram-outline mr-4 mr-lg-5 ml-lg-3"></span>
+					</a>
+					<!--Gthub-->
+					<a href="https://github.com/albert-van" target="_blank">
+					<span class="ion-social-github-outline mr-4 mr-lg-5 ml-lg-3"></span>
+					</a>
+					<!-- <span class="ion-social-skype-outline mr-4 mr-lg-5 ml-lg-3"></span>
+					<span class="ion-social-twitter-outline mr-4 mr-lg-5 ml-lg-3"></span>
+					<span class="ion-social-linkedin-outline ml-lg-3"></span> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<!-- <footer>
+	<div class="container-fluid mt-2">
+		<div class="row">
+			<div class="col-11 text-right">
+				<p class="license mr-lg-4 mr-0">
+					<a href="Albert Van Won"></a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Đồng hồ điện tử</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="dong_ho">
+        <h2>Time</h2>
+        <div id="thoi_gian">
+            <div>
+                <span id="gio">00</span><span>Giờ</span>
+            </div>
+            <div>    
+                <span id="phut">00</span><span>Phút</span>
+            </div>
+            <div>
+                <span id="giay">00</span><span>Giây</span>
+            </div>
+        </div>
+    </div>
+
+<script>
+    function Dong_ho() {
+        var gio = document.getElementById("gio");
+        var phut = document.getElementById("phut");
+        var giay = document.getElementById("giay");
+
+        var Gio_hien_tai = new Date().getHours();
+        var Phut_hien_tai = new Date().getMinutes();
+        var Giay_hien_tai = new Date().getSeconds();
+
+        gio.innerHTML = Gio_hien_tai;
+        phut.innerHTML = Phut_hien_tai;
+        giay.innerHTML = Giay_hien_tai;
+    }
+
+    var Dem_gio = setInterval(Dong_ho, 1000);
+	</script>
+
+</html>
